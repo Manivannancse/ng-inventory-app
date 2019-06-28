@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "type": "VW",
+      "date": 2012
+    },
+    {
+      "type": "Audi",
+      "date": 2011
+    },
+    {
+      "type": "Renault",
+      "date": 2005
+    },
+    {
+      "type": "BMW",
+      "date": 2003
+    },
+    {
+      "type": "Mercedes",
+      "date": 1995
+    },
+    {
+      "type": "Volvo",
+      "date": 2005
+    },
+    {
+      "type": "Honda",
+      "date": 2012
+    },
+    {
+      "type": "Jaguar",
+      "date": 2013
+    },
+    {
+      "type": "Ford",
+      "date": 2000
+    },
+    {
+      "type": "Fiat",
+      "date": 2013
+    }
+  ]
+}
