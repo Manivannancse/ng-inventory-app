@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "name": "VW",
+      "reg_no": 2012,
+      "fill_frequency": "Orange",
+      "tax_rate": "dsad231ff"
+    },
+    {
+      "name": "Audi",
+      "reg_no": 2011,
+      "fill_frequency": "Black",
+      "tax_rate": "gwregre345"
+    },
+    {
+      "name": "Renault",
+      "reg_no": 2005,
+      "fill_frequency": "Gray",
+      "tax_rate": "h354htr"
+    },
+    {
+      "name": "BMW",
+      "reg_no": 2003,
+      "fill_frequency": "Blue",
+      "tax_rate": "j6w54qgh"
+    },
+    {
+      "name": "Mercedes",
+      "reg_no": 1995,
+      "fill_frequency": "Orange",
+      "tax_rate": "hrtwy34"
+    },
+    {
+      "name": "Volvo",
+      "reg_no": 2005,
+      "fill_frequency": "Black",
+      "tax_rate": "jejtyj"
+    },
+    {
+      "name": "Honda",
+      "reg_no": 2012,
+      "fill_frequency": "Yellow",
+      "tax_rate": "g43gr"
+    },
+    {
+      "name": "Jaguar",
+      "reg_no": 2013,
+      "fill_frequency": "Orange",
+      "tax_rate": "greg34"
+    },
+    {
+      "name": "Ford",
+      "reg_no": 2000,
+      "fill_frequency": "Black",
+      "tax_rate": "h54hw5"
+    },
+    {
+      "name": "Fiat",
+      "reg_no": 2013,
+      "fill_frequency": "Red",
+      "tax_rate": "245t2s"
+    }
+  ]
+}

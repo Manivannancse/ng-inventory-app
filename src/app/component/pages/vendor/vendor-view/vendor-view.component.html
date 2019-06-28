@@ -1,0 +1,24 @@
+<p-card header="Vendor List">
+  <p-table #dt [columns]="cols" [value]="vendor" selectionMode="single" [(selection)]="selectedVendor">
+      <ng-template pTemplate="caption">
+          <div class="ui-helper-clearfix">
+              <button type="button" pButton icon="pi pi-cloud-download" iconPos="left" label="Export CSV" (click)="dt.exportCSV()" style="float:left"></button>
+              <a pButton icon="pi pi-plus" iconPos="left" label="Add Vendor" routerLink="/vendor/add" style="float:right"></a>
+          </div>
+      </ng-template>
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th *ngFor="let col of columns">
+                  {{col.header}}
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr [pSelectableRow]="rowData">
+              <td *ngFor="let col of columns">
+                  {{rowData[col.field]}}
+              </td>
+          </tr>
+      </ng-template>
+  </p-table>
+</p-card>
