@@ -10,7 +10,7 @@ import { Router, Event } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'A2Z';
   currentPath = [];
-  items: MenuItem[];
+  private items: MenuItem[];
 
 
   constructor(private router: Router) {
