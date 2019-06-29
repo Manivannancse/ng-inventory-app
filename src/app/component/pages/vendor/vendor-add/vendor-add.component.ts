@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SelectItem} from 'primeng/api';
+
 
 @Component({
   selector: 'app-vendor-add',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendorAddComponent implements OnInit {
 
-  constructor() { }
+  types: SelectItem[];
+
+  selectedType: string;
+
+  constructor() {
+    this.types = [];
+    this.types.push({title: 'GST', value: 'GST', label: "GST"});
+    this.types.push({title: 'IGST', value: 'IGST', label: "IGST"});
+  }
 
   ngOnInit() {
   }

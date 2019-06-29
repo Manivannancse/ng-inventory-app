@@ -20,6 +20,8 @@ import { DashboardComponent } from './component/pages/dashboard/dashboard.compon
 import { VendorComponent } from './component/pages/vendor/vendor.component';
 import { VendorAddComponent } from './component/pages/vendor/vendor-add/vendor-add.component';
 import { VendorViewComponent } from './component/pages/vendor/vendor-view/vendor-view.component';
+import { PoAddComponent } from './component/pages/purchase-order/po-add/po-add.component';
+import { PoViewComponent } from './component/pages/purchase-order/po-view/po-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -31,6 +33,15 @@ const routes: Routes = [
       { path: '', redirectTo: 'view', pathMatch: 'full' },
       { path: 'add', component:  AddComponent},
       { path: 'view', component:  ViewComponent}
+    ]
+  },
+  { 
+    path: 'purchase-order', 
+    component: CustomerComponent,
+    children: [
+      { path: '', redirectTo: 'view', pathMatch: 'full' },
+      { path: 'add', component:  PoAddComponent},
+      { path: 'view', component:  PoViewComponent}
     ]
   },
   {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Vendor } from 'src/app/shared/vendor/vendor';
+import { VendorService } from 'src/app/shared/vendor/vendorservice';
 
 @Component({
   selector: 'app-view',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  vendor: Vendor[];
+
+  selectedVendor: Vendor[];
+
+  cols: any[];
+
+  constructor(private vendorService: VendorService) { }
 
   ngOnInit() {
+      this.vendorService.getVendorSmall().then(cars => this.vendor = cars);
+
+      this.cols = [
+          { field: 'vendor_name', header: 'Customer Name' },
+          { field: 'address', header: 'Address' },
+          { field: 'lane_line_no', header: 'Lane Line No' },
+          { field: 'mobile_no', header: 'Color' }
+      ];
   }
 
 }

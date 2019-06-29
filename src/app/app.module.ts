@@ -35,6 +35,9 @@ import { ContextMenuModule } from 'primeng/contextmenu';
 import { ToastModule } from 'primeng/toast';
 import {CardModule} from 'primeng/card';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
+import {SelectButtonModule} from 'primeng/selectbutton';
+
+
 import { CustomerComponent } from './component/pages/customer/cutomer.component';
 import { AddComponent } from './component/pages/customer/add/add.component';
 import { ViewComponent } from './component/pages/customer/view/view.component';
@@ -54,6 +57,8 @@ import { DashboardComponent } from './component/pages/dashboard/dashboard.compon
 import { VendorComponent } from './component/pages/vendor/vendor.component';
 import { VendorViewComponent } from './component/pages/vendor/vendor-view/vendor-view.component';
 import { VendorAddComponent } from './component/pages/vendor/vendor-add/vendor-add.component';
+import { PoAddComponent } from './component/pages/purchase-order/po-add/po-add.component';
+import { PoViewComponent } from './component/pages/purchase-order/po-view/po-view.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +84,9 @@ import { VendorAddComponent } from './component/pages/vendor/vendor-add/vendor-a
     DashboardComponent,
     VendorComponent,
     VendorViewComponent,
-    VendorAddComponent
+    VendorAddComponent,
+    PoAddComponent,
+    PoViewComponent
   ],
   imports: [
     CommonModule,
@@ -106,7 +113,8 @@ import { VendorAddComponent } from './component/pages/vendor/vendor-add/vendor-a
     FormsModule,
     HttpClientModule,
     CardModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    SelectButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
